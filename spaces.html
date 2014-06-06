@@ -120,7 +120,7 @@
 	<div class="header">
     	<div class="header_nav_block">
         	<ul>
-            	<li class="current" data-id="profile_block">Profile</li>
+            	<li class="current" data-id="profile_block">Detail</li>
                 <li data-id="events_block">Events</li>
                 <li data-id="projects_block">Projects</li>
                 <li data-id="history_block">History</li>
@@ -128,31 +128,25 @@
                 <li data-id="links_block">Links</li>
                 <li data-id="weblinks_block">Web Links</li>
                 <li data-id="attachments_block">Attachments</li>
-                <li data-id="notes_block">Notes</li>
             </ul>
         </div>
     	<span class="close_dialog"></span>
     </div>
     <div class="dialog_content">
     <form>
-    	<div class="contact_block">
+    	<div class="spaces_block">
         	<div class="base_block">
             	<div class="img_block">
                 	<ul>
-                    	<li class="logo"><img src="public/images/uf21f6a18f86e408fb29b047eac110d33-0.png" style="width:180px;" /></li>
-                        <li class="select">
-                        	<div><input type="checkbox" name=""/> Do Not Call</div>
-                            <div><input type="checkbox" name=""/> Do Not Email</div>
-                            <div><input type="checkbox" name=""/> Do Not Fax</div>
-                            <div><input type="checkbox" name=""/> Do Not Mail</div>
+                    	<li class="main"><img src="public/images/u1c7f7eb9a0044eefae3a9ff48b5d7c81-0.jpg" style="width:350px;" /></li>
+                        <li class="select_img">
+                        	<div class="select_left off"></div><div class="select_right"></div>
                         </li>
                     </ul>
                 </div>
                 <div class="info_block">
                 	<ul>
                     	<li><span class="name">Christine Sando</span></li>
-                        <li><span class="position">CEO</span></li>
-  						<li><span class="department">NAI Las Vegas</span></li>
                         <li>
                         	<div class="info_edit_block">
                             	<div class="left_edit_block">
@@ -194,14 +188,16 @@
              <div class="extra_block">
                 	<div class="profile_block">
                     	<div class="profile_identity_block">
-                        	<input type="checkbox" /><span>Inbestor</span> 
-                            <input type="checkbox" /><span>Tenant</span> 
-                            <input type="checkbox" /><span>Agent</span> 
-                            <input type="checkbox" /><span>Vendor</span> 
-                            <input type="checkbox" /><span>Personal</span> 
-                           <input type="checkbox" /> <span>Prospect</span>
+                        	<input type="checkbox" /><span>Do Not Call</span> 
+                            <input type="checkbox" /><span>Do Not Email</span> 
+                            <input type="checkbox" /><span>Do Not Fax</span> 
+                            <input type="checkbox" /><span>Do Not Mail</span> 
                            <div class="cls"></div>
-                           <div class="profile_identity_extra_block ">
+                        </div>
+                        
+                    	
+                        <div class="investor_block extra_info_block cutover_info_block current">
+                        <div class="profile_identity_extra_block ">
                         <input type="checkbox" /><span>Broker</span> 
                         <input type="checkbox" /><span>Rehabs</span> 
                         <input type="checkbox" /><span>JV</span> 
@@ -212,224 +208,19 @@
                         <input type="checkbox" /><span>Credit</span> 
                         <div class="cls"></div>
                         </div>
+                        <div class="investor_body_block">
+                            <table cellpadding="1" cellspacing="0" border="0" class="edit_table_none_block">
+                            <tr>
+                                <td><label>Tran Amount</label> <input type="text" /></td>
+                                 <td><label>Tran Amount</label> <input type="text" /></td>
+                                  <td><label>Tran Amount</label> <input type="text" /></td>
+                                   <td><label>Tran Amount</label> <input type="text" /></td>
+                                </tr>
+                                
+                            </table>
                         </div>
                         
-                    	<div class="header">
-                            <div class="header_nav_block">
-                                <ul>
-                                    <li class="current cutover_block extra_info_block" data-select="extra_info_block" data-id="investor_block">Investor</li>
-                                    <li class="cutover_block extra_info_block" data-select="extra_info_block" data-id="tenant_block">Tenant</li>
-                                    <li class="cutover_block extra_info_block" data-select="extra_info_block" data-id="agnet_block">Agent</li>
-                                    <li class="cutover_block extra_info_block" data-select="extra_info_block" data-id="vendor_block">Vendor</li>
-                                    <li class="cutover_block extra_info_block" data-select="extra_info_block" data-id="personal_block">Personal</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="investor_block extra_info_block cutover_info_block current">
-                        	<div class="line_buttom">Product Information</div>
-                        	<div class="investor_body_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_table_block">
-                                	<tr>
-                                    	<td><label>Office</label> <input type="text" /></td>
-                                        <td><label>Office Min</label> <input type="text" /></td>
-                                        <td><label>Office Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Industrial</label> <input type="text" /></td>
-                                        <td><label>Industrial Min</label> <input type="text" /></td>
-                                        <td><label>Industrial Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Retail</label> <input type="text" /></td>
-                                        <td><label>Retail Min</label> <input type="text" /></td>
-                                        <td><label>Retail Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Land</label> <input type="text" /></td>
-                                        <td><label>Land Min</label> <input type="text" /></td>
-                                        <td><label>Land Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Multifamily</label> <input type="text" /></td>
-                                        <td><label>Apt. Min</label> <input type="text" /></td>
-                                        <td><label>Apt. Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Hotel</label> <input type="text" /></td>
-                                        <td><label>Hotel Min</label> <input type="text" /></td>
-                                        <td><label>Hotel Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Residential</label> <input type="text" /></td>
-                                        <td><label>Res. Min</label> <input type="text" /></td>
-                                        <td><label>Res. Max</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Other</label> <input type="text" /></td>
-                                        <td><label>Other Min</label> <input type="text" /></td>
-                                        <td><label>Other Max</label> <input type="text" /></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        <div class="cls mb20"></div>
-                        <div class="line_buttom">Product Information</div>
-                        	<div class="investor_body_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_table_block">
-                                	<tr>
-                                    	<td><label>Min Price</label> <input type="text" /></td>
-                                        <td><label>Max Price</label> <input type="text" /></td>
-                                        <td><label>Max Age</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Last Purchase</label> <input type="text" /></td>
-                                        <td><label>Purchase Date</label> <input type="text" /></td>
-                                        <td><label>Purchase Amt.</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Areas</label> <input type="text" /></td>
-                                        <td><label>Geographic</label> <input type="text" /></td>
-                                        <td><label>Hold Period</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Investor Type</label> <input type="text" /></td>
-                                        <td><label>Reference</label> <input type="text" /></td>
-                                        <td><label>Office</label> <input type="text" /></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="cls mb20"></div>
-                            <div class="investor_footer_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_footer_table_block">
-                                	<tr>
-                                    	<td><label>Owner</label> <input type="text" /></td>
-                                        <td><label>Verified By</label> <input type="text" /></td>
-                                        <td><label>Modified By</label> <input type="text" /></td>
-                                        <td><label>Created By</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Team</label> <input type="text" /></td>
-                                        <td><label>Date Verified</label> <input type="text" /></td>
-                                        <td><label>Modified Date</label> <input type="text" /></td>
-                                        <td><label>Created Date</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td></td>
-                                        <td></td>
-                                        <td><label>Client TZ</label> <input type="text" /></td>
-                                        <td><label>Current Time</label> <input type="text" /></td>
-                                    </tr>
-                           
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tenant_block extra_info_block cutover_info_block">
-                        	<div class="line_buttom">Tenant Information</div>
-                            <div class="cls mb20"></div>
-                            <div class="investor_footer_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_footer_table_block">
-                                	<tr>
-                                    	<td><label>Owner</label> <input type="text" /></td>
-                                        <td><label>Verified By</label> <input type="text" /></td>
-                                        <td><label>Modified By</label> <input type="text" /></td>
-                                        <td><label>Created By</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Team</label> <input type="text" /></td>
-                                        <td><label>Date Verified</label> <input type="text" /></td>
-                                        <td><label>Modified Date</label> <input type="text" /></td>
-                                        <td><label>Created Date</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td></td>
-                                        <td></td>
-                                        <td><label>Client TZ</label> <input type="text" /></td>
-                                        <td><label>Current Time</label> <input type="text" /></td>
-                                    </tr>
-                           
-                                </table>
-                            </div>
-                        </div>
-                        <div class="agnet_block extra_info_block cutover_info_block">
-                        	<div class="line_buttom">Agent Information</div>
-                            <div class="cls mb20"></div>
-                            <div class="investor_footer_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_footer_table_block">
-                                	<tr>
-                                    	<td><label>Owner</label> <input type="text" /></td>
-                                        <td><label>Verified By</label> <input type="text" /></td>
-                                        <td><label>Modified By</label> <input type="text" /></td>
-                                        <td><label>Created By</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Team</label> <input type="text" /></td>
-                                        <td><label>Date Verified</label> <input type="text" /></td>
-                                        <td><label>Modified Date</label> <input type="text" /></td>
-                                        <td><label>Created Date</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td></td>
-                                        <td></td>
-                                        <td><label>Client TZ</label> <input type="text" /></td>
-                                        <td><label>Current Time</label> <input type="text" /></td>
-                                    </tr>
-                           
-                                </table>
-                            </div>
-                        </div>
-                        <div class="vendor_block extra_info_block cutover_info_block">
-                        	<div class="line_buttom">Vendor Information</div>
-                            <div class="cls mb20"></div>
-                            <div class="investor_footer_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_footer_table_block">
-                                	<tr>
-                                    	<td><label>Owner</label> <input type="text" /></td>
-                                        <td><label>Verified By</label> <input type="text" /></td>
-                                        <td><label>Modified By</label> <input type="text" /></td>
-                                        <td><label>Created By</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Team</label> <input type="text" /></td>
-                                        <td><label>Date Verified</label> <input type="text" /></td>
-                                        <td><label>Modified Date</label> <input type="text" /></td>
-                                        <td><label>Created Date</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td></td>
-                                        <td></td>
-                                        <td><label>Client TZ</label> <input type="text" /></td>
-                                        <td><label>Current Time</label> <input type="text" /></td>
-                                    </tr>
-                           
-                                </table>
-                            </div>
-                        </div>
-                        <div class="personal_block extra_info_block cutover_info_block">
-                        	<div class="line_buttom">Personal Information</div>
-                            <div class="cls mb20"></div>
-                            <div class="investor_footer_block">
-                            	<table cellpadding="0" cellspacing="0" border="0" class="edit_profile_footer_table_block">
-                                	<tr>
-                                    	<td><label>Owner</label> <input type="text" /></td>
-                                        <td><label>Verified By</label> <input type="text" /></td>
-                                        <td><label>Modified By</label> <input type="text" /></td>
-                                        <td><label>Created By</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td><label>Team</label> <input type="text" /></td>
-                                        <td><label>Date Verified</label> <input type="text" /></td>
-                                        <td><label>Modified Date</label> <input type="text" /></td>
-                                        <td><label>Created Date</label> <input type="text" /></td>
-                                    </tr>
-                                    <tr>
-                                    	<td></td>
-                                        <td></td>
-                                        <td><label>Client TZ</label> <input type="text" /></td>
-                                        <td><label>Current Time</label> <input type="text" /></td>
-                                    </tr>
-                           
-                                </table>
-                            </div>
-                        </div>
+                       
                     </div>
            </div>
             
