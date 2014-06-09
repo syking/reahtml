@@ -1,8 +1,16 @@
 $(function(){setLeftNavTop();
 	$('.item_block').click(function(){
+		// 计算弹出框位置
+		var width = $(document).width();
+		var left = (width - $('.item_dialog_block').width())/2;
+		left = left<1?1:left;
+		top = $(document).scrollTop();
+		$('.item_dialog_block').css('left',left );
+		$('.item_dialog_block').css('top', top+50);
 		$('.dialog_bg').show();
     	$('.item_dialog_block').show();
 	});
+	
 	$('.dialog .close_dialog').click(function(){
 		// 重置表单
 		$(this).parent().parent().find('form')[0].reset();
