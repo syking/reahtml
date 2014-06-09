@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ignite UI</title>
+<!-- Ignite UI Required Combined CSS Files -->
+<!--<link href="/IgniteUI//css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+<link href="/IgniteUI/css/structure/infragistics.css" rel="stylesheet" />-->
+<link href="public/css/base.css" rel="stylesheet" />
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
+<style type="text/css"></style>
+</head>
+<body>
+
+<div id="map_canvas" style="width:500px; height:500px">
+
+</div>
+
+
+<script type="text/javascript">
+
+    function showMap(address)
+	{
+
+	geocoder = new google.maps.Geocoder();
+	
+	// Indonesia Malaysia Thailand Philippine
+	
+	//geocoder.geocode({ address: '203 Henderson Road, '+ country}, 
+	geocoder.geocode({ address: address},
+	function (results, status) {
+		if (status == google.maps.GeocoderStatus.OK)
+		{
+			var loc = results[0].geometry.location;
+		//	alert(loc.lat()+'='+ loc.lng());
+			latlng = new google.maps.LatLng(loc.lat(), loc.lng());
+			//latlng = new google.maps.LatLng("34.0621224","-118.41583109999999");
+			var myOptions = {
+				zoom: 16,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+		   
+			var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			var marker = new google.maps.Marker(
+			{
+				position: latlng,
+				map: map
+			});
+			var html = '';
+			html += address==''?'':'<div style="width:300px; clear:both; line-height:24px;color:#666; font-size:14px;">'+address+'</div>';
+			var infowindow = new google.maps.InfoWindow({ content: html});
+			
+			infowindow.open(map, marker);
+		}else{
+			document.getElementById('map_canvas').innerHTML = "No found address.";
+		}
+    });
+}
+
+function Request(argname)
+{
+var url = document.location.href;
+	var arrStr = url.substring(url.indexOf("?")+1).split("&");
+	//return arrStr;
+	for(var i =0;i<arrStr.length;i++)
+	{
+	   var loc = arrStr[i].indexOf(argname+"=");
+	
+	   if(loc!=-1)
+	   {
+		return arrStr[i].replace(argname+"=","").replace("?","");
+		break;
+	   }
+	  
+	}
+	return "";
+}
+	var Street = decodeURI(Request('Street'));
+	var Latitude = Request('Latitude');
+	var Longitude = Request('Longitude');
+
+	showMap('aaa', Street, '', '', '', '');
+	
+	
+</script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 $(function(){setLeftNavTop();
 	$('.item_block').click(function(){
 		// 计算弹出框位置
@@ -26,6 +27,23 @@ $(function(){setLeftNavTop();
 	
 	$('.jsUrl').click(function(){
 		window.location.href = $(this).attr('data-url');
+	});
+	
+	// 显示地图
+	$('.contact span.ico').click(function(){
+		var address = $(this).attr('data-address');
+		// goods map
+		if(address)
+		{
+			
+			
+			 window.open   ('map.html?Street='+address+'&Latitude='+$(this).attr('data-lat')+'&Longitude='+$(this).attr('data-lng'),   '_blank',   
+			'height=400,width=420,top=0,left=24,toolbar=no,menubar=no,scrollbars=no,   resizable=no,location=no,status=no');
+			 alert('dd');
+			//windo.open('map.html?Street='+address);
+			
+		}
+		return false;
 	});
 });
 $(document).resize(function(){setLeftNavTop();});
