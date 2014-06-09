@@ -270,7 +270,8 @@ p{line-height:1.6;color:#666;}
 .info_main_block .span120{ width:140px;}
 .info_main_block li{ margin-top:2px;}
 .info_main_block input[type="text"]{ border:none; background:#fff; border:#f9f9f9 1px solid; height:20px; line-height:20px; width:120px;}
-.info_main_block .input320{ width:320px;}
+.info_main_block .input160{ width:160px!important;}
+.info_main_block .input320{ width:320px!important;}
 .info_main_block .box_block{ display:none;}
 .info_main_block .current{ display:block!important;}
 .base_block .select_img{ margin-top:8px; clear:both;}
