@@ -6,11 +6,11 @@
 <!-- Ignite UI Required Combined CSS Files -->
 <!--<link href="/IgniteUI//css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
 <link href="/IgniteUI/css/structure/infragistics.css" rel="stylesheet" />-->
-<link href="public/css/base.css" rel="stylesheet" />
+<link href="/public/css/base.css" rel="stylesheet" />
 <!-- JavaScript Library Dependencies -->
-<script src="public/js/modernizr.min.js"></script>
-<script src="public/js/jquery.min.js"></script>
-<script src="public/js/jquery-ui.min.js"></script>
+<script src="/public/js/modernizr.min.js"></script>
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/js/jquery-ui.min.js"></script>
 <!-- Ignite UI Required Combined JavaScript Files -->
 <!--
 <script src="/IgniteUI/js/infragistics.core.js"></script>
@@ -21,13 +21,13 @@
 <body>
 <div id="main">
   <div class="header_block">
-    <div class="bg_block"><img src="public/images/hdr-bkg.png" style="width:100%; height:100%;" /></div>
+    <div class="bg_block"><img src="/public/images/hdr-bkg.png" style="width:100%; height:100%;" /></div>
     <div class="nav_block">
-      <div class="logo"><img src="public/images/u32.png" style="max-height:50px;" /><img src="public/images/u9.png" style=" margin-top:32px; height:9px;" /></div>
+      <div class="logo"><img src="/public/images/u32.png" style="max-height:50px;" /><img src="/public/images/u9.png" style=" margin-top:32px; height:9px;" /></div>
       <div class="nav"> <span>Welcome<em> <a href="">Yagee</a></em></span> <span class="link"> | <a href="">SIGN OUT</a> | <a href="">ABOUT</a> | <a href="">ABOUT</a></span></div>
     </div>
     <div class="search_block">
-      <div class="logo"> <span class="text_block">My</span><img src="public/images/u54.png" style="width:120px; height:61px; margin:0 12px;" /> <span class="text_block">Hello</span></div>
+      <div class="logo"> <span class="text_block">My</span><img src="/public/images/u54.png" style="width:120px; height:61px; margin:0 12px;" /> <span class="text_block">Hello</span></div>
       <div class="nav">
         <input type="text"  name="kw"/>
         <input type="submit" value="Go" />
@@ -62,7 +62,7 @@
       </div>
       <div class="content_block spaces_block">
         <div class="item_block">
-          <div class="item_left"> <img class="avatar" src="public/images/uf21f6a18f86e408fb29b047eac110d33-0.png" /> </div>
+          <div class="item_left"> <img class="avatar" src="/public/images/cover.jpg" /> </div>
           <div class="item_right">
             <ul>
               <li class="name mb20">Christine Sando</li>
@@ -132,7 +132,7 @@
         <div class="base_block">
           <div class="img_block">
             <ul>
-              <li class="main"><img src="public/images/u1c7f7eb9a0044eefae3a9ff48b5d7c81-0.jpg" style="width:350px;" /></li>
+              <li class="main"><img src="/public/images/u1c7f7eb9a0044eefae3a9ff48b5d7c81-0.jpg" style="width:350px;" /></li>
               <li class="select_img">
                 <div class="select_left off"></div>
                 <div class="select_right"></div>
@@ -206,7 +206,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="center_edit_block contact"><img src="public/images/Icon-Locator-grey.png" class="ico" data-address="beijing,china" data-lat="" data-lng="" style="width:16px;" /></div>
+                  <div class="center_edit_block contact"><img src="/public/images/Icon-Locator-grey.png" class="ico" data-address="beijing,china" data-lat="" data-lng="" style="width:16px;" /></div>
                   <div class="right_edit_block">
                     <div class="select_edit_block compay_block_ico current cutover_block person_info_block" data-select="person_info_block" data-id="compay_block"></div>
                     <div class="select_edit_block person_block_ico cutover_block person_info_block" data-select="person_info_block" data-id="person_block"></div>
@@ -234,36 +234,75 @@
             <div class="investor_block extra_info_block cutover_info_block current">
               <div class="profile_identity_extra_block ">
                 <input type="checkbox" />
-                <span>Broker</span>
+                <span>Available</span>
                 <input type="checkbox" />
-                <span>Rehabs</span>
+                <span>Office</span>
                 <input type="checkbox" />
-                <span>JV</span>
+                <span>Retail</span>
                 <input type="checkbox" />
-                <span>NNN</span>
+                <span>Industrial</span>
                 <input type="checkbox" />
-                <span>Sgl Tenant</span>
+                <span>Sublesase Tenant</span>
                 <input type="checkbox" />
-                <span>Multi Tenant</span>
-                <input type="checkbox" />
-                <span>Sgl Family</span>
-                <input type="checkbox" />
-                <span>Credit</span>
+                <span>Other</span>
                 <div class="cls"></div>
               </div>
               <div class="investor_body_block">
-                <table cellpadding="1" cellspacing="0" border="0" class="edit_table_none_block">
-                  <tr>
-                    <td><label>Tran Amount</label>
-                      <input type="text" /></td>
-                    <td><label>Tran Amount</label>
-                      <input type="text" /></td>
-                    <td><label>Tran Amount</label>
-                      <input type="text" /></td>
-                    <td><label>Tran Amount</label>
-                      <input type="text" /></td>
-                  </tr>
-                </table>
+                <div style="float:left; width:415px;">
+                	<ul>
+                        <li>
+                        <label>Floor</label> <input type="text" /> <label>Rent/Sqft</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Suite</label> <input type="text" /> <label>Rent/Month</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Area</label> <input type="text" /> <label>Effective Rent</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Lease Comm</label> <input type="text" /> <label>Increases</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Lease Exp.</label> <input type="text" /> <label>Options</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Lease Term</label> <input type="text" /> <label>TIA</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Lease Type</label> <input type="text" /> <label>CAM</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Occupancy</label> <input type="text" /> <label>Taxes</label> <input type="text" />
+                        </li>
+                        <li>
+                        <label>Insurance</label> <input type="text" />
+                        </li>
+                       </ul>
+                </div>
+                
+                <div style="width:200px; float:left; margin-left:12px;">
+                <div class="line_buttom">Office/Retail</div>
+                <ul>
+                	<li><label>Usable Area</label> <input type="text" /></li>
+                    <li><label>Load Factor</label> <input type="text" /></li>
+                    <li><label>Frontage</label> <input type="text" /></li>
+                    <li><label>Percent Rent</label> <input type="text" /></li>
+                </ul>
+                </div>
+                <div style="width:200px; float:left; margin-left:12px;">
+                <div class="line_buttom">Industrial</div>
+                <ul>
+                	<li><label>Office Area</label> <input type="text" /></li>
+                    <li><label>Grade Door</label> <input type="text" /></li>
+                    <li><label>Dock Doors</label> <input type="text" /></li>
+                    <li><label>Truck Doors</label> <input type="text" /></li>
+                    <li><label>Clear Ht</label> <input type="text" /></li>
+                    <li><label>Power</label> <input type="text" /></li>
+                    <li><label>Rail Service</label> <input type="text" /></li>
+                    <li><label>Yard</label> <input type="text" /></li>
+                </ul>
+                </div>
+              
               </div>
             </div>
           </div>
@@ -273,6 +312,6 @@
     </form>
   </div>
 </div>
-<script src="public/js/base.js"></script>
+<script src="/public/js/base.js"></script>
 </body>
 </html>
