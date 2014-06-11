@@ -7,55 +7,62 @@
 <!--<link href="/IgniteUI//css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
 <link href="/IgniteUI/css/structure/infragistics.css" rel="stylesheet" />-->
 <link href="/public/css/base.css" rel="stylesheet" />
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
 <style type="text/css"></style>
 </head>
 <body>
 
-<div id="map_canvas" style="width:500px; height:500px">
+<div id="map_canvas" style="width:100%; height:500px;">
 
 </div>
 
 
 <script type="text/javascript">
-
+	
+		$(window).resize(function(){
+			$('#map_canvas').css('width', $(document).width());
+			$('#map_canvas').css('height', $(document).height());
+		});
+	
     function showMap(address)
 	{
-
-	geocoder = new google.maps.Geocoder();
-	
-	// Indonesia Malaysia Thailand Philippine
-	
-	//geocoder.geocode({ address: '203 Henderson Road, '+ country}, 
-	geocoder.geocode({ address: address},
-	function (results, status) {
-		if (status == google.maps.GeocoderStatus.OK)
-		{
-			var loc = results[0].geometry.location;
-		//	alert(loc.lat()+'='+ loc.lng());
-			latlng = new google.maps.LatLng(loc.lat(), loc.lng());
-			//latlng = new google.maps.LatLng("34.0621224","-118.41583109999999");
-			var myOptions = {
-				zoom: 16,
-				center: latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-		   
-			var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-			var marker = new google.maps.Marker(
+		$('#map_canvas').css('width', $(document).width());
+		$('#map_canvas').css('height', $(document).height());
+		geocoder = new google.maps.Geocoder();
+		
+		// Indonesia Malaysia Thailand Philippine
+		
+		//geocoder.geocode({ address: '203 Henderson Road, '+ country}, 
+		geocoder.geocode({ address: address},
+		function (results, status) {
+			if (status == google.maps.GeocoderStatus.OK)
 			{
-				position: latlng,
-				map: map
-			});
-			var html = '';
-			html += address==''?'':'<div style="width:300px; clear:both; line-height:24px;color:#666; font-size:14px;">'+address+'</div>';
-			var infowindow = new google.maps.InfoWindow({ content: html});
-			
-			infowindow.open(map, marker);
-		}else{
-			document.getElementById('map_canvas').innerHTML = "No found address.";
-		}
-    });
+				var loc = results[0].geometry.location;
+			//	alert(loc.lat()+'='+ loc.lng());
+				latlng = new google.maps.LatLng(loc.lat(), loc.lng());
+				//latlng = new google.maps.LatLng("34.0621224","-118.41583109999999");
+				var myOptions = {
+					zoom: 16,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+			   
+				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+				var marker = new google.maps.Marker(
+				{
+					position: latlng,
+					map: map
+				});
+				var html = '';
+				html += address==''?'':'<div style="width:300px; clear:both; line-height:24px;color:#666; font-size:14px;">'+address+'</div>';
+				var infowindow = new google.maps.InfoWindow({ content: html});
+				
+				infowindow.open(map, marker);
+			}else{
+				document.getElementById('map_canvas').innerHTML = "No found address.";
+			}
+    	});
 }
 
 function Request(argname)
