@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
 dl, dt, dd, ul, ol, li,
@@ -292,7 +292,7 @@ p{line-height:1.6;color:#666;}
 
 
 /*index_block*/
-.index_block{ background:url(../images/REALive%20Login%20Background.clean.png) no-repeat; height:785px;}
+.index_block{ background:url(../images/REALiveLoginBackground.clean.jpg) no-repeat; height:785px;}
 .index_block .index_left_block{  float:left; margin:90px 0 0 110px; width:310px;}
 .index_block .index_right_block{ float:left; width:350px; margin-left:150px;}
 .index_left_block .logo_bg_block{ background:url(../images/u52.png) no-repeat left bottom; display:block; height:200px; color: #F2F2F2; padding-top:20px; padding-left:40px;font-family: 'Calibri Light','Calibri';font-size: 32px;font-weight: 300;text-align: center;}
